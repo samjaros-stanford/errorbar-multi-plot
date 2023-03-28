@@ -20,7 +20,7 @@ y_labels = c(
   "dbp" = "Diastolic Blood Pressure\nBeta Coefficient"
 )
 
-plot_data = read.csv("plot_data.csv") %>%
+plot_data = read.csv("point_plot_data.csv") %>%
   mutate(variable = factor(variable)) %>%
   mutate(type = factor(type, levels=c("Unadjusted", "Adjusted")))
 
